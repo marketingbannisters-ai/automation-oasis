@@ -3,10 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Copy, CheckCircle, Users, Image, Link, Hash, Calendar } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import avatarSocial from "@/assets/avatar-social.jpg";
 
 const SocialPostr = () => {
   const [workflowChecks, setWorkflowChecks] = useState<Record<string, boolean>>({});
@@ -67,11 +69,17 @@ ${postingTemplate.imageNotes}`;
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4">SocialPostr</h1>
-          <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-4">
+          <div className="flex items-center justify-center space-x-3 text-muted-foreground mb-4">
             <span>Created by</span>
-            <Badge variant="secondary" className="bg-brand-gold2/10 text-brand-gold2">
-              Social Media Team
-            </Badge>
+            <div className="flex items-center space-x-2">
+              <Avatar className="h-6 w-6">
+                <AvatarImage src={avatarSocial} alt="Social Media Team" />
+                <AvatarFallback>ST</AvatarFallback>
+              </Avatar>
+              <Badge variant="secondary" className="bg-brand-gold2/10 text-brand-gold2">
+                Social Media Team
+              </Badge>
+            </div>
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Streamlined workflow checklist and template system for consistent social media posting across all platforms.

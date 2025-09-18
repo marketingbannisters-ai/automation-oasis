@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Download, Settings, AlertCircle, HelpCircle, Mail, Code } from "lucide-react";
+import avatarAutomation from "@/assets/avatar-automation.jpg";
 
 const EmailGenius = () => {
   const [sidebarActive, setSidebarActive] = useState("install");
@@ -19,11 +21,17 @@ const EmailGenius = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4">Email Genius</h1>
-          <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-4">
+          <div className="flex items-center justify-center space-x-3 text-muted-foreground mb-4">
             <span>Created by</span>
-            <Badge variant="secondary" className="bg-brand-gold1/10 text-brand-gold1">
-              Automation Team
-            </Badge>
+            <div className="flex items-center space-x-2">
+              <Avatar className="h-6 w-6">
+                <AvatarImage src={avatarAutomation} alt="Automation Team" />
+                <AvatarFallback>AT</AvatarFallback>
+              </Avatar>
+              <Badge variant="secondary" className="bg-brand-gold1/10 text-brand-gold1">
+                Automation Team
+              </Badge>
+            </div>
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             An intelligent Outlook add-in that enhances your email workflow with AI-powered features and automation capabilities.

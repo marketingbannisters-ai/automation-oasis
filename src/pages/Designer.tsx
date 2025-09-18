@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Palette, ExternalLink, Maximize2 } from "lucide-react";
+import avatarDesign from "@/assets/avatar-design.jpg";
 
 const Designer = () => {
   return (
@@ -10,11 +12,17 @@ const Designer = () => {
             <Palette className="mr-3 h-8 w-8 text-brand-blue1" />
             Designer
           </h1>
-          <div className="flex items-center justify-center space-x-2 text-muted-foreground mb-4">
+          <div className="flex items-center justify-center space-x-3 text-muted-foreground mb-4">
             <span>Created by</span>
-            <Badge variant="secondary" className="bg-brand-blue1/10 text-brand-blue1">
-              Design Team
-            </Badge>
+            <div className="flex items-center space-x-2">
+              <Avatar className="h-6 w-6">
+                <AvatarImage src={avatarDesign} alt="Design Team" />
+                <AvatarFallback>DT</AvatarFallback>
+              </Avatar>
+              <Badge variant="secondary" className="bg-brand-blue1/10 text-brand-blue1">
+                Design Team
+              </Badge>
+            </div>
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             AI-powered design assistant for creating professional graphics, layouts, and visual content with automated workflows.
