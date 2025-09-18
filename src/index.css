@@ -38,20 +38,36 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Brand Colors - Automation Hub */
+    --brand-primary: 210 12% 29%;     /* #4a4d4d */
+    --brand-blue1: 199 100% 42%;      /* #0091d4 */
+    --brand-navy: 210 100% 13%;       /* #002344 */
+    --brand-gold1: 42 34% 56%;        /* #b4a269 */
+    --brand-gold2: 42 65% 58%;        /* #d8ad4f */
+    --brand-blue2: 204 100% 28%;      /* #005b8d */
+
+    /* Component-specific tokens */
+    --navbar-bg: var(--brand-navy);
+    --navbar-text: 0 0% 100%;
+    --navbar-active: var(--brand-gold2);
+    
+    --button-primary: var(--brand-blue1);
+    --button-primary-text: 0 0% 100%;
+    --button-secondary-border: var(--brand-blue2);
+    --button-secondary-text: var(--brand-blue2);
+    
+    --shadow-soft: 0 8px 24px hsla(0, 0%, 0%, 0.08);
+    --shadow-card: 0 4px 16px hsla(0, 0%, 0%, 0.06);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
