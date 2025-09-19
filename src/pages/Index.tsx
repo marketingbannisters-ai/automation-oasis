@@ -31,6 +31,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why AI-BAG Exists Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Why AI-BAG Exists</h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              At Bannister Automotive Group, we believe that technology should make life easier, not busier. 
+              That's why we created AI-BAG, a collection of practical AI tools crafted by our very own employees.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              These automations tackle the little tasks that eat up minutes in your day:
+            </p>
+            
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  <strong>Drafting emails</strong> so you can spend more time on the sales floor.
+                </p>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  <strong>Tracking milestones</strong> so you can celebrate your colleagues instead of crunching numbers.
+                </p>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  <strong>Streamlining workflows</strong> so your energy stays where it matters most.
+                </p>
+              </div>
+            </div>
+            
+            <p className="text-lg text-muted-foreground mt-8 leading-relaxed font-medium">
+              When the small stuff is handled, you show up to every conversation more present, more engaged, and more people-first.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The Ripple Effect Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">The Ripple Effect</h2>
+          </div>
+          
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Every minute saved per employee adds up. One minute reclaimed each day equals about <strong>$100,000 in yearly savings</strong> across the company. 
+              Now imagine the power of five minutes, thirty minutes, or even an hour.
+            </p>
+            
+            <div className="bg-card rounded-2xl p-8 shadow-soft border border-border">
+              <p className="text-xl text-foreground leading-relaxed">
+                But here's the bigger picture: it's not just about saving money. It's about saving <strong>focus, energy, and presence</strong>, 
+                so our team and our customers feel the difference every single day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
