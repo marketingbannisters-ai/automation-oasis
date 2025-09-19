@@ -32,47 +32,69 @@ const Index = () => {
       </section>
 
       {/* Why AI-BAG Exists Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Why AI-BAG Exists</h2>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-blue1/5 via-transparent to-brand-gold1/5"></div>
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-blue1 rounded-2xl mb-6">
+              <Target className="h-8 w-8 text-white" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Why AI-BAG Exists</h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               At Bannister Automotive Group, we believe that technology should make life easier, not busier. 
               That's why we created AI-BAG, a collection of practical AI tools crafted by our very own employees.
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              These automations tackle the little tasks that eat up minutes in your day:
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-xl text-foreground font-semibold">
+                These automations tackle the little tasks that eat up minutes in your day:
+              </p>
+            </div>
             
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  <strong>Drafting emails</strong> so you can spend more time on the sales floor.
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="group bg-card rounded-2xl p-8 shadow-soft border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-brand-blue1 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Mail className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Drafting Emails</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  So you can spend more time on the sales floor connecting with customers.
                 </p>
               </div>
               
-              <div className="flex items-start space-x-4">
-                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  <strong>Tracking milestones</strong> so you can celebrate your colleagues instead of crunching numbers.
+              <div className="group bg-card rounded-2xl p-8 shadow-soft border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-brand-gold1 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <CheckCircle className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Tracking Milestones</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  So you can celebrate your colleagues instead of crunching numbers.
                 </p>
               </div>
               
-              <div className="flex items-start space-x-4">
-                <div className="w-2 h-2 bg-brand-blue1 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  <strong>Streamlining workflows</strong> so your energy stays where it matters most.
+              <div className="group bg-card rounded-2xl p-8 shadow-soft border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-brand-gold2 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <ArrowRight className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Streamlining Workflows</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  So your energy stays where it matters most - with people.
                 </p>
               </div>
             </div>
             
-            <p className="text-lg text-muted-foreground mt-8 leading-relaxed font-medium">
-              When the small stuff is handled, you show up to every conversation more present, more engaged, and more people-first.
-            </p>
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-brand-primary/10 to-brand-blue1/10 rounded-2xl p-8 border border-brand-blue1/20">
+                <p className="text-xl text-foreground leading-relaxed font-medium">
+                  When the small stuff is handled, you show up to every conversation more 
+                  <span className="text-brand-blue1 font-semibold"> present</span>, more 
+                  <span className="text-brand-gold1 font-semibold"> engaged</span>, and more 
+                  <span className="text-brand-gold2 font-semibold"> people-first</span>.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
