@@ -26,7 +26,7 @@ const SocialPostr = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-foreground mb-6 bg-gradient-to-r from-brand-blue1 to-brand-blue2 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold text-foreground mb-6">
             One Tool to Schedule Posts Across All Dealerships
           </h1>
           <div className="flex items-center justify-center space-x-3 text-muted-foreground mb-6">
@@ -183,8 +183,13 @@ const SocialPostr = () => {
                             <IconComponent className={`h-8 w-8 text-${item.color}`} />
                           </div>
                         </div>
-                        <div className="mt-4 text-right">
-                          <span className="text-sm text-muted-foreground italic">(Then Image is placed)</span>
+                        <div className="mt-4">
+                          <div className="w-full h-32 bg-muted rounded-lg border-2 border-dashed border-muted-foreground/30 flex items-center justify-center">
+                            <div className="text-center">
+                              <Image className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
+                              <span className="text-sm text-muted-foreground">Screenshot will be placed here</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
