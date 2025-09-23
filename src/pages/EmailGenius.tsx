@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Download, Settings, AlertCircle, HelpCircle, Mail, Code } from "lucide-react";
+import { Download, Settings, AlertCircle, HelpCircle, Mail, Code, Users, Clock, DollarSign, Target } from "lucide-react";
 import avatarAutomation from "@/assets/avatar-automation.jpg";
 
 const EmailGenius = () => {
@@ -13,6 +13,7 @@ const EmailGenius = () => {
     { id: "install", label: "Install", icon: Download },
     { id: "permissions", label: "Permissions", icon: Settings },
     { id: "troubleshooting", label: "Troubleshooting", icon: AlertCircle },
+    { id: "why-use", label: "Why Use This", icon: Target },
     { id: "support", label: "Support", icon: HelpCircle },
   ];
 
@@ -171,6 +172,95 @@ const EmailGenius = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Network requests blocked</h3>
                   <p className="text-muted-foreground">Verify that the n8n webhook URL is reachable from your network and firewall settings allow connections.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Why to use this tool Section */}
+            <div id="why-use" className="mt-12 bg-card rounded-2xl shadow-soft border border-border p-6">
+              <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center">
+                <Target className="mr-3 h-6 w-6 text-brand-blue1" />
+                Why to use this tool?
+              </h2>
+              
+              <div className="space-y-6">
+                <p className="text-muted-foreground text-lg">
+                  At Bannister, the numbers tell a compelling story about email efficiency:
+                </p>
+                
+                {/* Statistics Cards */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="bg-gradient-to-br from-brand-blue1/10 to-brand-blue2/10 rounded-xl p-4 border border-brand-blue1/20">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Users className="h-8 w-8 text-brand-blue1" />
+                      <div>
+                        <div className="text-2xl font-bold text-foreground">1000+</div>
+                        <div className="text-sm text-muted-foreground">Employees</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-brand-gold1/10 to-brand-gold2/10 rounded-xl p-4 border border-brand-gold1/20">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Mail className="h-8 w-8 text-brand-gold1" />
+                      <div>
+                        <div className="text-2xl font-bold text-foreground">10</div>
+                        <div className="text-sm text-muted-foreground">Emails per day</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-brand-navy/10 to-brand-blue1/10 rounded-xl p-4 border border-brand-navy/20">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <Clock className="h-8 w-8 text-brand-navy" />
+                      <div>
+                        <div className="text-2xl font-bold text-foreground">3</div>
+                        <div className="text-sm text-muted-foreground">Minutes per email</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-xl p-4 border border-red-500/20">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <DollarSign className="h-8 w-8 text-red-500" />
+                      <div>
+                        <div className="text-2xl font-bold text-foreground">30</div>
+                        <div className="text-sm text-muted-foreground">Minutes per person/day</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* The Math Breakdown */}
+                <div className="bg-muted/50 rounded-xl p-6 border border-border">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">The Impact:</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between py-2 border-b border-border/50">
+                      <span className="text-muted-foreground">Total time per month (1000 employees):</span>
+                      <span className="font-bold text-foreground text-lg">132,000 Hours</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2 border-b border-border/50">
+                      <span className="text-muted-foreground">Equivalent to hiring:</span>
+                      <span className="font-bold text-brand-blue1 text-lg">62 Full-time Employees</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2">
+                      <span className="text-muted-foreground">Annual cost impact:</span>
+                      <span className="font-bold text-red-500 text-lg">Significant Overhead</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Goal Statement */}
+                <div className="bg-gradient-to-r from-brand-blue1/5 to-brand-blue2/5 rounded-xl p-6 border border-brand-blue1/20">
+                  <div className="flex items-start space-x-4">
+                    <Target className="h-8 w-8 text-brand-blue1 mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Our Goal</h3>
+                      <p className="text-muted-foreground text-lg">
+                        <strong>Bring down the amount spent on emails as much as possible.</strong> Every minute saved on email processing translates to more time for productive work and significant cost savings across the organization.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
