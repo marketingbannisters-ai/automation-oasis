@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Download, Settings, AlertCircle, HelpCircle, Mail, Code, Users, Clock, DollarSign, Target } from "lucide-react";
+import { Download, Settings, AlertCircle, HelpCircle, Mail, Code, Users, Clock, DollarSign, Target, Timer } from "lucide-react";
 import avatarAutomation from "@/assets/avatar-automation.jpg";
 
 const EmailGenius = () => {
@@ -222,7 +222,7 @@ const EmailGenius = () => {
                   
                   <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-xl p-4 border border-red-500/20">
                     <div className="flex items-center space-x-3 mb-2">
-                      <DollarSign className="h-8 w-8 text-red-500" />
+                      <Timer className="h-8 w-8 text-red-500" />
                       <div>
                         <div className="text-2xl font-bold text-foreground">30</div>
                         <div className="text-sm text-muted-foreground">Minutes per person/day</div>
